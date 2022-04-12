@@ -27,7 +27,7 @@ namespace Investran.Api
 
             // Singleton                              
             container.Register<Authentication>(Lifestyle.Singleton);
-            container.Register<UdfHelper>(Lifestyle.Singleton);
+            container.Register<UdfHelper>(Lifestyle.Scoped);
 
             // Services
             container.Register<UdfService>(Lifestyle.Scoped);
