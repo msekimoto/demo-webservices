@@ -1,0 +1,31 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Investran.Api", "Investran.API\Investran.Api.csproj", "{36B48592-CCB1-45FD-BAD7-97E87BE28664}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Investran.Integration", "Investran.Integration\Investran.Integration.csproj", "{8816FE47-B97C-417A-BD07-A9128F33F784}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36B48592-CCB1-45FD-BAD7-97E87BE28664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36B48592-CCB1-45FD-BAD7-97E87BE28664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36B48592-CCB1-45FD-BAD7-97E87BE28664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36B48592-CCB1-45FD-BAD7-97E87BE28664}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8816FE47-B97C-417A-BD07-A9128F33F784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8816FE47-B97C-417A-BD07-A9128F33F784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8816FE47-B97C-417A-BD07-A9128F33F784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8816FE47-B97C-417A-BD07-A9128F33F784}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD4961F7-FDC7-447C-B1E7-7F8E0C19ACBC}
+	EndGlobalSection
+EndGlobal
