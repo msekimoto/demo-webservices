@@ -77,9 +77,6 @@
     <Reference Include="Sungard.Investran.Suite.FundDiagram.WebServices.Contracts">
       <HintPath>..\..\lib\Sungard.Investran.Suite.FundDiagram.WebServices.Contracts.dll</HintPath>
     </Reference>
-    <Reference Include="Sungard.Investran.Suite.LegacyWebServices.Contracts">
-      <HintPath>..\..\lib\Sungard.Investran.Suite.LegacyWebServices.Contracts.dll</HintPath>
-    </Reference>
     <Reference Include="Sungard.Investran.Suite.Security">
       <HintPath>..\..\lib\Sungard.Investran.Suite.Security.dll</HintPath>
     </Reference>
