@@ -43,7 +43,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <IncludeIisSettings>false</IncludeIisSettings>    
+    <IncludeIisSettings>false</IncludeIisSettings>
     <LegacyPublishPropertiesPageEnabled>true</LegacyPublishPropertiesPageEnabled>
     <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
     <PublishDatabases>false</PublishDatabases>
@@ -261,9 +261,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Investran.API.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>    
+    <Content Include="Investran.API.xml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
