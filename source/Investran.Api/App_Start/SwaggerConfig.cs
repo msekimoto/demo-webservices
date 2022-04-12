@@ -165,7 +165,7 @@ namespace Investran.Api
                         // to inspect some attribute on each action and infer which (if any) OAuth2 scopes are required
                         // to execute the operation
                         //
-                        c.OperationFilter<AssignOAuth2SecurityRequirements>();
+                        //c.OperationFilter<AssignOAuth2SecurityRequirements>();
 
                         // Post-modify the entire Swagger document by wiring up one or more Document filters.
                         // This gives full control to modify the final SwaggerDocument. You should have a good understanding of
@@ -191,7 +191,7 @@ namespace Investran.Api
                         // Use the "DocumentTitle" option to change the Document title.
                         // Very helpful when you have multiple Swagger pages open, to tell them apart.
                         //
-                        c.DocumentTitle("GS Investran API Swagger");
+                        c.DocumentTitle("Investran API Swagger");
 
                         // Use the "InjectStylesheet" option to enrich the UI with one or more additional CSS stylesheets.
                         // The file must be included in your project as an "Embedded Resource", and then the resource's
@@ -246,18 +246,11 @@ namespace Investran.Api
                         // If your API supports the OAuth2 Implicit flow, and you've described it correctly, according to
                         // the Swagger 2.0 specification, you can enable UI support as shown below.
                         //
-                        c.EnableOAuth2Support(
-                            clientId: "investran-client",
-                            clientSecret: "investran-secret",
-                            realm: "investran-realm",
-                            appName: "investran-app", 
-                            scopeSeperator: "investran-api"
-                        );
 
                         // If your API supports ApiKey, you can override the default values.
                         // "apiKeyIn" can either be "query" or "header"
                         //
-                        c.EnableApiKeySupport("Bearer", "header");
+                        //c.EnableApiKeySupport("Bearer", "header");
                     });
         }
 
@@ -266,28 +259,6 @@ namespace Investran.Api
             var dir = AppDomain.CurrentDomain.BaseDirectory;
             var file = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
             return Path.Combine(dir, file);
-        }
-    }
-
-    public class AssignOAuth2SecurityRequirements : IOperationFilter
-    {
-        public void Apply(Operation operation, SchemaRegistry schemaRegistry, ApiDescription apiDescription)
-        {
-            var actFilters = apiDescription.ActionDescriptor.GetFilterPipeline();
-
-            //var allowsAnonymous = actFilters.Select(f => f.Instance).OfType<OverrideAuthorizationAttribute>().Any();
-            //if (allowsAnonymous)
-            //    return;
-
-            if (operation.security == null)
-                operation.security = new List<IDictionary<string, IEnumerable<string>>>();
-
-            var oAuthRequirements = new Dictionary<string, IEnumerable<string>>
-            {
-                {"oauth2", new List<string> {"investran-api"}}
-            };
-
-            operation.security.Add(oAuthRequirements);
         }
     }
 }
