@@ -38,7 +38,7 @@ namespace Investran.Api
 
             GlobalConfiguration.Configure((httpConfig) =>
             {
-                httpConfig.Filters.Add(new AuthorizeAttribute());
+                //httpConfig.Filters.Add(new AuthorizeAttribute());
             });
 
         }
