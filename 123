@@ -1,0 +1,8 @@
+ FetchOptions.AsString
+                  (
+                         FetchOptions.AsBigInteger(FetchOptions.LegalEntityOrganization)
+                         | FetchOptions.AsBigInteger(FetchOptions.LegalEntityPaymentInstructions)
+                         | FetchOptions.AsBigInteger(FetchOptions.OrganizationUdfs)
+                         | FetchOptions.AsBigInteger(FetchOptions.LegalEntityContacts)
+                         | FetchOptions.AsBigInteger(FetchOptions.LegalEntityUdfs)
+                  )
